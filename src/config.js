@@ -1,5 +1,5 @@
 const config = {
-    REACT_APP_API_BASE: process.env.REACT_APP_API_BASE || 'http://localhost:8080'
+    REACT_APP_API_BASE: process.env.REACT_APP_API_BASE || 'https://fuentes-petful.herokuapp.com/'
   };
   
   
