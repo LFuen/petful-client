@@ -29,6 +29,7 @@ class AdoptionPage extends Component {
         this.context.setCurrentDog(res[1]);
         let userQueue = new Queue();
         res[2].forEach((user) => userQueue.enqueue(user));
+
         this.context.setQueue(userQueue);
       })
       .catch((e) => console.error(e));
@@ -106,6 +107,7 @@ class AdoptionPage extends Component {
   };
 
   render() {
+    console.log(this.context)
     const petAdopted = this.context.adopted.map((animal, index) => (
       <div className="adopted" key={index}>
         <Adopted
