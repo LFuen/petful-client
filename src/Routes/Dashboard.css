@@ -1,0 +1,17 @@
+body {
+    background-color: #84dcc6;
+    color: #070707;
+}
+
+h1 {
+    font-size: 100px;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.dashboard-fp {
+    text-align: center;
+}
