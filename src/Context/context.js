@@ -61,7 +61,7 @@ export class AppContextProvider extends Component {
   };
 
   clearQueue = () => {
-    this.setState({ first: {}, requeue: () => {}l });
+    this.setState({ first: {}, requeue: () => {} });
   };
 
   setUserName = (userName) => {
