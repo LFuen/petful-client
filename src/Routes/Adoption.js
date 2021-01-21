@@ -3,7 +3,7 @@ import AppContext from "../Context/context";
 import CatsService from "../Services/cat-services";
 import DogsService from "../Services/dog-services";
 import UsersService from "../Services/user-services";
-import UserQueue from "../Components/InLine";
+import InLine from "../Components/InLine";
 import Info from "../Components/Info";
 import Adopted from "../Components/Adopted";
 import Queue from "../Services/queues";
@@ -51,7 +51,7 @@ class AdoptionPage extends Component {
 
   renderQueue() {
     return (
-      <UserQueue
+      <InLine
         first={this.context.queue.first.value}
         second={this.context.queue.first.next.value}
         third={this.context.queue.first.next.next.value}
@@ -133,7 +133,7 @@ class AdoptionPage extends Component {
         </div>
         <div>
           <hr/>  
-          <h3><b>Adopted</b></h3>
+          <h3>Adopted</h3>
           {petAdopted}
         </div>
       </div>

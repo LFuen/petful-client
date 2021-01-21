@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import AppContext from "../Context/context";
-import './PetInfo.css'
+import './Info.css'
 
-export default class PetInfo extends Component {
+export default class Info extends Component {
   static contextType = AppContext;
   render() {
     const { animal, handleAdoptClick } = this.props;
@@ -31,4 +31,4 @@ export default class PetInfo extends Component {
       </div>
     );
   }
-} 
+}

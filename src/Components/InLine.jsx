@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './InLine.css'
 
-export default class Queue extends Component {
+export default class InLine extends Component {
   render() {
     return (
       <div className="queue-card">
