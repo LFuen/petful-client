@@ -26,35 +26,32 @@ class Dashboard extends Component {
       <main className="dashboard-fp">
         <div>
           <h1>Petful</h1>
-
+          <img className='front' src={require('../images/adoptDog.png')}/>
           <h4>
-            Here at Petful, we work to match the first person in the adoption
-            queue to the first pet that arrived at the shelter so no pets are
-            left behind.
+            Join the queue, get matched with a friend. Yes, it's that easy!
           </h4>
 
-          <h4>While this crazy, archaic way of adoption would never be established in real life (or at least we hope),
-              take a stroll down pretend-land with us and check out the stock images of pets by clicking the button below!
+          <h4>Let's check out pets available for adoption by clicking the button below!
           </h4>
 
           <Link to="/adopt">
-            <button>Preview Adoptable Pets</button>{" "}
+            <button className='adopt'>Get Matched</button>{" "}
           </Link>
 
           <form onSubmit={this.handleSubmit}>
             <h4>
-              Or, add your name below to get added to the queue and take home a
-              stock image of a furry friend today!
+              Or, add your name below to get added to the queue and take home a furry friend today!
             </h4>
             <input
               aria-label="name"
               type="text"
               name="name"
               id="name"
-              placeholder="Name..."
+              placeholder="What's Your Name?"
               required
             />
-            <button type="submit">Submit</button>
+            <br/>
+            <button type="submit">Get in Line</button>
           </form>
         </div>
       </main>

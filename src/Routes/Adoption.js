@@ -3,8 +3,8 @@ import AppContext from "../Context/context";
 import CatsService from "../Services/cat-services";
 import DogsService from "../Services/dog-services";
 import UsersService from "../Services/user-services";
-import UserQueue from "../Components/Queue";
-import PetInfo from "../Components/PetInfo";
+import UserQueue from "../Components/InLine";
+import Info from "../Components/Info";
 import Adopted from "../Components/Adopted";
 import Queue from "../Services/queues";
 import "./Adoption.css";
@@ -61,7 +61,7 @@ class AdoptionPage extends Component {
 
   renderCat() {
     return (
-      <PetInfo
+      <Info
         animal={this.context.currentCat}
         animalType={"cat"}
         handleAdoptClick={this.handleAdoptCat}
@@ -71,7 +71,7 @@ class AdoptionPage extends Component {
 
   renderDog() {
     return (
-      <PetInfo
+      <Info
         animal={this.context.currentDog}
         animalType={"dog"}
         handleAdoptClick={this.handleAdoptDog}
@@ -133,7 +133,7 @@ class AdoptionPage extends Component {
         </div>
         <div>
           <hr/>  
-          <h3>Adopted</h3>
+          <h3><b>Adopted</b></h3>
           {petAdopted}
         </div>
       </div>

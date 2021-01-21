@@ -12,9 +12,10 @@ ul {
 }
 
 .queue-card {
-    width: 90%;
+    width: 25%;
     margin: 0 auto;
-    background: #ffa69e;
-    box-shadow: 2px 2px 5px #ffa69e;
+    border-radius: 10px;
+    background: #dadada;
+    box-shadow: 2px 2px 5px #000000;
 }
 

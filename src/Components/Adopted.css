@@ -1,3 +1,20 @@
 .adopted-section {
     margin-top: 15px;
 }
+
+.owned {
+    width: 25%;
+}
+
+.congrats {
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+}
+
+.yay {
+    width: 30%;
+    border: none;
+    box-shadow: none;
+    padding-right: 30px;
+}
+

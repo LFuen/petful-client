@@ -31,4 +31,4 @@ export default class PetInfo extends Component {
       </div>
     );
   }
-}
+} 

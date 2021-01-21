@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './Queue.css'
+import './InLine.css'
 
 export default class Queue extends Component {
   render() {
