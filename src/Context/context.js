@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 const AppContext = React.createContext({
   users: [],
-  queue: null,
+  queue: {first:{}},
   userName: "",
   currentCat: {},
   currentDog: {},
@@ -40,7 +40,7 @@ export default AppContext;
 export class AppContextProvider extends Component {
   state = {
     users: [],
-    queue: null,
+    queue: { first: {}, requeue: () => {} },
     userName: "",
     currentCat: {},
     currentDog: {},
