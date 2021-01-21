@@ -2,7 +2,7 @@ import config from "../config";
 
 const UsersService = {
   postUser(name) {
-    return fetch(`${config.API_ENDPOINT}/users`, {
+    return fetch(`${config.REACT_APP_API_BASE}/users`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -16,7 +16,7 @@ const UsersService = {
   },
 
   getUsers() {
-    return fetch(`${config.API_ENDPOINT}/users`, {
+    return fetch(`${config.REACT_APP_API_BASE}/users`, {
       method: "GET",
       headers: {
         "content-type": "application/json",
