@@ -14,7 +14,6 @@ class AdoptionPage extends Component {
 
   componentDidMount() {
     this.context.clearError();
-    this.context.clearQueue();
     this.context.clearCurrentCat();
     this.context.clearCurrentDog();
 
