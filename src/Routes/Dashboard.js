@@ -26,7 +26,7 @@ class Dashboard extends Component {
       <main className="dashboard-fp">
         <div>
           <h1>Petful</h1>
-          <img className='front' src={require('../images/adoptDog.png')}/>
+          <img className='front' src={require('../images/adoptDog.png')} alt='Adopt Me'/>
           <h4>
             Join the queue, get matched with a friend. Yes, it's that easy!
           </h4>

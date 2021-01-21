@@ -7,7 +7,7 @@ export default class Adopted extends Component {
 
     return (
       <div className='congrats'>
-        <img className='yay' src={require('../images/congrats.png')}/>
+        <img className='yay' src={require('../images/congrats.png')} alt='Congrats'/>
         <img className='owned' src={imgSrc} alt="pet" />
         <p><b>Pet Name: {name}</b></p>
         <p><b>Owner: {owner}</b></p>
