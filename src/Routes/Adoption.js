@@ -107,7 +107,7 @@ class AdoptionPage extends Component {
   };
 
   render() {
-    console.log(this.context)
+    if (this.context.queue.next === undefined) return null;
     const petAdopted = this.context.adopted.map((animal, index) => (
       <div className="adopted" key={index}>
         <Adopted
