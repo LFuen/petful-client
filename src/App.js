@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Dashboard from "./Routes/Dashboard";
+import Main from "./Routes/Main";
 import AdoptionPage from "./Routes/Adoption";
 
 export default class App extends Component {
@@ -9,7 +9,7 @@ export default class App extends Component {
       <div className="App">
         <main role="main" className="App-main">
           <Switch>
-            <Route exact path="/" component={Dashboard} />
+            <Route exact path="/" component={Main} />
             <Route path="/adopt" component={AdoptionPage} />
           </Switch>
         </main>

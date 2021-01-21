@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import AppContext from "../Context/context";
 import UsersService from "../Services/user-services";
 import { Link } from "react-router-dom";
-import "./Dashboard.css";
+import "./Main.css";
 
-class Dashboard extends Component {
+class Main extends Component {
   static contextType = AppContext;
 
   handleSubmit = (event) => {
@@ -58,4 +58,4 @@ class Dashboard extends Component {
     );
   }
 }
-export default Dashboard;
+export default Main;
