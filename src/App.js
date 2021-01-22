@@ -9,10 +9,10 @@ export default class App extends Component {
     return (
       <div className="App">
         <main role="main" className="App-main">
-          <Switch>
+          <BrowserRouter>
             <Route exact path="/" component={Main} />
             <Route exact path="/adopt" component={Adoption} />
-          </Switch>
+          </BrowserRouter>
         </main>
       </div>
     );
