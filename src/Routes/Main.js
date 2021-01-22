@@ -5,22 +5,6 @@ import { Link } from "react-router-dom";
 import "./Main.css";
 
 class Main extends Component {
-  static contextType = AppContext;
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-    this.context.clearError();
-    this.context.clearUserName();
-    let name = document.getElementById("name").value;
-    this.context.setUserName(name);
-
-    return UsersService.postUser(name).then((results) => {
-      const { location, history } = this.props;
-      const destination = (location.state || {}).from || "/adopt";
-      history.push(destination);
-    });
-  };
-
   render() {
     return (
       <main className="dashboard-fp">
@@ -37,22 +21,6 @@ class Main extends Component {
           <Link to="/adopt">
             <button className='adopt'>Get Matched</button>{" "}
           </Link>
-
-          <form onSubmit={this.handleSubmit}>
-            <h4>
-              Or, add your name below to get added to the queue and take home a furry friend today!
-            </h4>
-            <input
-              aria-label="name"
-              type="text"
-              name="name"
-              id="name"
-              placeholder="What's Your Name?"
-              required
-            />
-            <br/>
-            <button type="submit">Get in Line</button>
-          </form>
         </div>
       </main>
     );
