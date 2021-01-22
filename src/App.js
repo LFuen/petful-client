@@ -11,7 +11,7 @@ export default class App extends Component {
         <main role="main" className="App-main">
           <BrowserRouter>
             <Route exact path="/" component={Main} />
-            <Route path="/adopt" component={Adoption} />
+            <Route exact path="/adopt" component={Adoption} />
           </BrowserRouter>
         </main>
       </div>
