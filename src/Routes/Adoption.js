@@ -9,7 +9,7 @@ import Adopted from "../Components/Adopted";
 import Queue from "../Services/queues";
 import "./Adoption.css";
 
-class AdoptionPage extends Component {
+class Adoption extends Component {
   static contextType = AppContext;
 
   componentDidMount() {
@@ -142,4 +142,4 @@ class AdoptionPage extends Component {
     );
   }
 }
-export default AdoptionPage;
+export default Adoption;
