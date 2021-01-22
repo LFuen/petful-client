@@ -108,7 +108,7 @@ class Adoption extends Component {
 
   render() {
     if (this.context.queue.next === undefined) return null;
-    console.log(this.context.adopted)
+    console.log(this.context.adopted, 'color: #f0c002')
     const petAdopted = this.context.adopted.map((animal, index) => (
       <div className="adopted" key={index}>
         <Adopted
