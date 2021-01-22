@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Route, BrowserRouter } from "react-router-dom";
-import Main from "./Routes/Main";
 import Adoption from "./Routes/Adoption";
+import Main from "./Routes/Main";
+
 
 export default class App extends Component {
   render() {
