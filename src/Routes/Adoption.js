@@ -88,7 +88,7 @@ class Adoption extends Component {
         this.context.setAdopted(res);
       })
       .then((res) => {
-        CatsService.getCat().then((res) => this.context.setCurrentCat(res));
+        CatsService.getCat().then((res) => this.context.setCurrentCat(res.cat));
         this.setState({ nowAdopting: this.context.queue.first.value });
       });
   };
@@ -101,7 +101,7 @@ class Adoption extends Component {
         this.context.setAdopted(res);
       })
       .then((res) => {
-        DogsService.getDog().then((res) => this.context.setCurrentDog(res));
+        DogsService.getDog().then((res) => this.context.setCurrentDog(res.dog));
         this.setState({ nowAdopting: this.context.queue.first.value });
       });
   };
