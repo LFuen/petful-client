@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import './Adopted.css'
 
 export default class Adopted extends Component {
@@ -12,9 +13,9 @@ export default class Adopted extends Component {
         <p><b>Pet Name: {name}</b></p>
         <p><b>Owner: {owner}</b></p>
         <p><b>Congrats on your new pal!!</b></p>
-        <button type="button" onClick={() => props.reset()}>
-          Return home?
-        </button>
+        <Link to='/'>
+        <button className='adopt'>Return home?</button>
+        </Link>
       </div>
     );
   }
