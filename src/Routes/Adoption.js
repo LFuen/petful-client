@@ -121,7 +121,7 @@ class Adoption extends Component {
     return (
       <div className="adoption-page">
         <h1>Give Them A Home</h1>
-        {this.context.queue.first.next ? this.renderQueue() : "Loading Pets! ..."}
+        {this.context.queue ? this.renderQueue() : "Loading Pets! ..."}
 
         <div>
           <div>
