@@ -12,6 +12,9 @@ export default class Adopted extends Component {
         <p><b>Pet Name: {name}</b></p>
         <p><b>Owner: {owner}</b></p>
         <p><b>Congrats on your new pal!!</b></p>
+        <button type="button" onClick={() => props.reset()}>
+          Return home?
+        </button>
       </div>
     );
   }
