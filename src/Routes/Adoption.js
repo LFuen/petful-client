@@ -106,22 +106,6 @@ class Adoption extends Component {
       });
   };
 
-  static contextType = AppContext;
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-    this.context.clearError();
-    this.context.clearUserName();
-    let name = document.getElementById("name").value;
-    this.context.setUserName(name);
-
-    return UsersService.postUser(name).then((results) => {
-      const { location, history } = this.props;
-      const destination = (location.state || {}).from || "/adopt";
-      history.push(destination);
-    });
-  };
-
   render() {
     const petAdopted = this.context.adopted.map((animal, index) => (
       <div className="adopted" key={index}>
@@ -136,23 +120,6 @@ class Adoption extends Component {
     return (
       <div className="adoption-page">
         <h1>Give Them A Home</h1>
-
-        <form onSubmit={this.handleSubmit}>
-            <h4>
-              Add your name below to get added to the queue and take home a furry friend today!
-            </h4>
-            <input
-              aria-label="name"
-              type="text"
-              name="name"
-              id="name"
-              placeholder="What's Your Name?"
-              required
-            />
-            <br/>
-            <button type="submit">Get in Line</button>
-          </form>
-
         {this.context.queue.first.next ? this.renderQueue() : "Loading Pets! ..."}
 
         <div>
