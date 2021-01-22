@@ -1,7 +1,6 @@
 # Petful Client
 
 + Link to [Live Client](https://petful-client.lfuen.vercel.app/)
-+ Link to [Client Repo](https://github.com/LFuen/petful-client)
 + Link to [Server Repo](https://github.com/LFuen/petful-server)
 
 ## App Description
