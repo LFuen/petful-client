@@ -88,7 +88,7 @@ class Adoption extends Component {
         this.context.setAdopted(res);
       })
       .then((res) => {
-        CatsService.getCat().then((res) => this.context.setCurrentCat(res.cat));
+        CatsService.getCat().then((res) => this.context.setCurrentCat(res));
         this.setState({ nowAdopting: this.context.queue.first.value });
       });
   };
@@ -101,7 +101,7 @@ class Adoption extends Component {
         this.context.setAdopted(res);
       })
       .then((res) => {
-        DogsService.getDog().then((res) => this.context.setCurrentDog(res.dog));
+        DogsService.getDog().then((res) => this.context.setCurrentDog(res));
         this.setState({ nowAdopting: this.context.queue.first.value });
       });
   };
@@ -121,7 +121,7 @@ class Adoption extends Component {
     return (
       <div className="adoption-page">
         <h1>Give Them A Home</h1>
-        {/* {this.context.queue.first.next ? this.renderQueue() : "Loading Pets! ..."} */}
+        {this.context.queue.first.next ? this.renderQueue() : "Loading Pets! ..."}
 
         <div>
           <div>
